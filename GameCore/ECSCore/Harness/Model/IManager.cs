@@ -1,4 +1,5 @@
-﻿using NECS.Core.Logging;
+﻿using Godot;
+using NECS.Core.Logging;
 using NECS.ECS.ECSCore;
 using NECS.Extensions;
 using NECS.GameEngineAPI;
@@ -149,7 +150,7 @@ namespace NECS.Harness.Model
 
 
 
-        public override void OnCollisionEnter(EngineApiCollision3D collision)
+        public override void OnCollisionEnter(CollisionObject collision)
         {
             if (!isPrefabScript)
             {
@@ -157,12 +158,12 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnCollisionEnterManager(EngineApiCollision3D collision)
+        protected virtual void OnCollisionEnterManager(CollisionObject collision)
         {
 
         }
 
-        public override void OnCollisionExit(EngineApiCollision3D collisionInfo)
+        public override void OnCollisionExit(CollisionObject collisionInfo)
         {
             if (!isPrefabScript)
             {
@@ -170,12 +171,12 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnCollisionExitManager(EngineApiCollision3D collisionInfo)
+        protected virtual void OnCollisionExitManager(CollisionObject collisionInfo)
         {
 
         }
 
-        public override void OnCollisionStay(EngineApiCollision3D collisionInfo)
+        public override void OnCollisionStay(CollisionObject collisionInfo)
         {
             if (!isPrefabScript)
             {
@@ -183,12 +184,12 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnCollisionStayManager(EngineApiCollision3D collisionInfo)
+        protected virtual void OnCollisionStayManager(CollisionObject collisionInfo)
         {
 
         }
 
-        public override void OnTriggerEnter(EngineApiCollider3D other)
+        public override void OnTriggerEnter(CollisionObject other)
         {
             if (!isPrefabScript)
             {
@@ -196,12 +197,12 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnTriggerEnterManager(EngineApiCollider3D other)
+        protected virtual void OnTriggerEnterManager(CollisionObject other)
         {
 
         }
 
-        public override void OnTriggerExit(EngineApiCollider3D other)
+        public override void OnTriggerExit(CollisionObject other)
         {
             if (!isPrefabScript)
             {
@@ -209,12 +210,12 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnTriggerExitManager(EngineApiCollider3D other)
+        protected virtual void OnTriggerExitManager(CollisionObject other)
         {
 
         }
 
-        public override void OnTriggerStay(EngineApiCollider3D other)
+        public override void OnTriggerStay(CollisionObject other)
         {
             if (!isPrefabScript)
             {
@@ -222,7 +223,7 @@ namespace NECS.Harness.Model
             }
         }
 
-        protected virtual void OnTriggerStayManager(EngineApiCollider3D other)
+        protected virtual void OnTriggerStayManager(CollisionObject other)
         {
 
         }

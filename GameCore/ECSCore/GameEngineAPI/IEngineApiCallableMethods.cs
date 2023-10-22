@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Godot;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,29 +20,29 @@ namespace NECS.GameEngineAPI
         void FixedUpdate();
         void FixedUpdate(double delta);
 
-        void OnTriggerEnter(EngineApiCollider3D other);
+        void OnTriggerEnter(CollisionObject other);
 
-        void OnTriggerStay(EngineApiCollider3D other);
+        void OnTriggerStay(CollisionObject other);
 
-        void OnTriggerExit(EngineApiCollider3D other);
+        void OnTriggerExit(CollisionObject other);
 
-        void OnTriggerEnter2D(EngineApiCollider2D other);
+        void OnTriggerEnter2D(CollisionObject2D other);
 
-        void OnTriggerStay2D(EngineApiCollider2D other);
+        void OnTriggerStay2D(CollisionObject2D other);
 
-        void OnTriggerExit2D(EngineApiCollider2D other);
+        void OnTriggerExit2D(CollisionObject2D other);
 
-        void OnCollisionEnter(EngineApiCollision3D collision);
+        void OnCollisionEnter(CollisionObject collision);
 
-        void OnCollisionStay(EngineApiCollision3D collision);
+        void OnCollisionStay(CollisionObject collision);
 
-        void OnCollisionExit(EngineApiCollision3D collision);
+        void OnCollisionExit(CollisionObject collision);
 
-        void OnCollisionEnter2D(EngineApiCollision2D collision);
+        void OnCollisionEnter2D(CollisionObject2D collision);
 
-        void OnCollisionStay2D(EngineApiCollision2D collision);
+        void OnCollisionStay2D(CollisionObject2D collision);
 
-        void OnCollisionExit2D(EngineApiCollision2D collision);
+        void OnCollisionExit2D(CollisionObject2D collision);
 
         void Update(double delta);
         void Update();

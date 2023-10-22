@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Godot;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -189,32 +190,32 @@ namespace NECS.GameEngineAPI
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionEnter(EngineApiCollision3D collision)
+        public virtual void OnCollisionEnter(CollisionObject collision)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionEnter2D(EngineApiCollision2D collision)
+        public virtual void OnCollisionEnter2D(CollisionObject2D collision)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionExit(EngineApiCollision3D collision)
+        public virtual void OnCollisionExit(CollisionObject collision)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionExit2D(EngineApiCollision2D collision)
+        public virtual void OnCollisionExit2D(CollisionObject2D collision)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionStay(EngineApiCollision3D collision)
+        public virtual void OnCollisionStay(CollisionObject collision)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnCollisionStay2D(EngineApiCollision2D collision)
+        public virtual void OnCollisionStay2D(CollisionObject2D collision)
         {
             throw new NotImplementedException();
         }
@@ -239,32 +240,32 @@ namespace NECS.GameEngineAPI
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerEnter(EngineApiCollider3D other)
+        public virtual void OnTriggerEnter(CollisionObject other)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerEnter2D(EngineApiCollider2D other)
+        public virtual void OnTriggerEnter2D(CollisionObject2D other)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerExit(EngineApiCollider3D other)
+        public virtual void OnTriggerExit(CollisionObject other)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerExit2D(EngineApiCollider2D other)
+        public virtual void OnTriggerExit2D(CollisionObject2D other)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerStay(EngineApiCollider3D other)
+        public virtual void OnTriggerStay(CollisionObject other)
         {
             throw new NotImplementedException();
         }
 
-        public virtual void OnTriggerStay2D(EngineApiCollider2D other)
+        public virtual void OnTriggerStay2D(CollisionObject2D other)
         {
             throw new NotImplementedException();
         }
@@ -307,7 +308,7 @@ namespace NECS.GameEngineAPI
         
     }
 
-    public class StaticEngineApiObjectBehaviour
+    public partial class StaticEngineApiObjectBehaviour : Node
     {
         public static void Destroy(object obj)
         {
