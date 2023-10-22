@@ -7,13 +7,20 @@ using System.Threading.Tasks;
 
 namespace NECS.Harness.Model
 {
-    public interface IComponentManager : IManager
+    public abstract class IComponentManager : IECSObjectManager<ECSComponent>
     {
-        ECSComponent ManagerComponent
+        public ECSComponent ManagerComponent
         {
-            get; set;
+            get
+            {
+                return this.ManagerECSObject;
+            }
+            set
+            {
+                this.ManagerECSObject = value;
+            }
         }
 
-        long ManagerComponentId { get; }
+        public long ManagerComponentId => this.ManagerECSObjectId;
     }
 }

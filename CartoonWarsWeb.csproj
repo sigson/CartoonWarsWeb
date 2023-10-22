@@ -3,4 +3,8 @@
     <TargetFramework>net472</TargetFramework>
     <RootNamespace>CartoonWarsWeb</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="GameCore\Model\" />
+    <Folder Include="GameCore\Services\" />
+  </ItemGroup>
 </Project>
