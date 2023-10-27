@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://GameView/Resources/BaseTowers/2/normal.png" type="Texture" id=1]
+[ext_resource path="res://GameCore/DataStorage/ItemCard.cs" type="Script" id=2]
+[ext_resource path="res://GameView/Resources/BaseTowers/2/halfdestroyed.png" type="Texture" id=3]
+[ext_resource path="res://GameView/Resources/BaseTowers/2/destroyed.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 2 )
+Data = {
+"destroyed": ExtResource( 4 ),
+"halfdestroyed": ExtResource( 3 ),
+"normal": ExtResource( 1 )
+}
+RawData = [  ]
+Colors = {
+}
